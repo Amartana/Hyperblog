@@ -1,7 +1,7 @@
 body
 {
+    background-color: #333;
     color: #333;
-    text-align: center;
     font-family: Arial;
     font-size: 16px;
     margin: 0;
@@ -18,6 +18,12 @@ body
     margin: 0;
     padding: 0.5em;
 }
+#cabecera>img{
+    width: 20px;
+    margin-right: 0.33em;
+    vertical-align: middle; 
+    /* ESTO SIRVE PARA ALINEAR LA IMAGEN CON LOS DEMAS ELEMENTOS DEL DIV SIN TENER QUE USAR FLEX */
+}
 
 #cabecera #tagline
 {
@@ -28,11 +34,13 @@ body
 
 #container
 {
+    background-color: white;
     width: 70%;
     padding: 0;
     text-align: left;
     border: 1px solid #DDD;
     margin: 0 auto;
+    height: 100vh;
 }
 
 #container h1
